@@ -1,0 +1,117 @@
+<div class="profileGrid">
+  <div class="profileChangesGrid">
+    <div class="orderHistory">
+      <div ng-repeat="order in orders">
+
+
+        <div class="carHistoryGrid">
+          <div class="carHistoryPanel">
+            <img src="./img/{{order.Car.idPhoto}}.jpg" style="width:100%;" alt="">
+          </div>
+          <div class="carHistoryPanel">
+            <h4>Order details</h4>
+            <table style="width:100%">
+              <tr>
+                <th>Insurance type:</th>
+                <td>{{order.InsuranceType.insuranceName}}</td>
+                <td>{{order.InsuranceType.insurancePrice}} PLN</td>
+              </tr>
+              <tr>
+                <th>Region size:</th>
+                <td>{{order.RegionSize.regionSizeName}}</td>
+                <td>{{order.RegionSize.regionPrice}} PLN p/d</td>
+              </tr>
+              <tr>
+                <th>Region name:</th>
+                <td>{{order.RegionName.regionName}}</td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>{{order.price}}</td>
+              </tr>
+              <tr>
+                <th>Status order:</th>
+                <td>{{order.statusOrder}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="carHistoryPanel">
+            <h4>Car details</h4>
+            <table style="width:100%">
+              <tr>
+                <th>Brand:</th>
+                <td>{{order.Car.CarBrand.carBrand}}</td>
+              </tr>
+              <tr>
+                <th>Name:</th>
+                <td>{{order.Car.CarName.carName}}</td>
+              </tr>
+              <tr>
+                <th>Type:</th>
+                <td>{{order.Car.CarType.typeName}}</td>
+              </tr>
+              <tr>
+                <th>Count person:</th>
+                <td>{{order.Car.countPerson}}</td>
+              </tr>
+              <tr>
+                <th>Price per day:</th>
+                <td>{{order.Car.CarPriceCategory.pricePerDay}}</td>
+              </tr>
+              <tr>
+                <th>Horse power:</th>
+                <td>{{order.Car.horsePower}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="carHistoryPanel">
+            <h4>Other Info</h4>
+            <table style="width:100%">
+              <tr>
+                <th>Start service d:</th>
+                <td>{{order.startServiceDate}}</td>
+              </tr>
+              <tr>
+                <th>End service d:</th>
+                <td>{{order.endServiceDate}}</td>
+              </tr>
+              <tr>
+                <th>Order date:</th>
+                <td>{{order.orderTimeDate}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="profileButtonsGrid">
+
+    <a href="#editProfile">
+      <div class="profileButton">
+        Edit profile
+      </div>
+    </a>
+
+    <a href="#editPassword">
+      <div class="profileButton">
+        Edit password
+      </div>
+    </a>
+
+    <a href="#orderHistory">
+      <div class="profileButton">
+        Order History
+      </div>
+    </a>
+
+    <a href="#deleteAcc">
+      <div class="profileButton">
+        Delete account
+      </div>
+    </a>
+
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="loginForm">
+  <h1>Welcome! <br> Can you sign in here.</h1><br>
+
+  <form class="simple-form" name="loginForm">
+    <div class="form-group">
+      <label for="usr">Username:</label>
+      <input type="text" name="username" class="form-control" ng-model="user.username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="usr">Password:</label>
+      <input type="password" name="password" class="form-control" ng-model="user.password" required>
+    </div>
+
+    <a href="#forgotPassword">Forgot my password</a>
+    {{massage}}
+    <button type="button" class="btn btn-primary pull-right" ng-click="login()" ng-disabled="loginForm.$invalid">Sign in</button>
+  </form>
+</div>

@@ -1,0 +1,69 @@
+<div class="profileGrid">
+  <div class="profileChangesGrid">
+    <div class="regForm">
+      <form class="simple-form" name="editProfileForm">
+          <div class="form-group" ng-class="{ 'has-error' : editProfileForm.firstName.$invalid && !editProfileForm.firstName.$pristine }">
+            <label for="usr">First name:</label>
+            <input type="text" name="firstName" class="form-control" ng-model="user.firstName" ng-minlength="3" ng-maxlength="20" placeholder="Letters from 3 to 20 signs" ng-pattern="/^[a-zA-Z]*$/" required>
+            <p ng-show="editProfileForm.firstName.$error.minlength" class="help-block">First name is too short.</p>
+            <p ng-show="editProfileForm.firstName.$error.maxlength" class="help-block">First name is too long.</p>
+            <p ng-show="editProfileForm.firstName.$error.pattern" class="help-block">First name must have only letters.</p>
+          </div>
+
+          <div class="form-group" ng-class="{ 'has-error' : editProfileForm.lastName.$invalid && !editProfileForm.lastName.$pristine }">
+            <label for="usr">Last name:</label>
+            <input type="text" name="lastName" class="form-control" ng-model="user.lastName" ng-minlength="3" ng-maxlength="20" placeholder="Letters from 3 to 20 signs" ng-pattern="/^[a-zA-Z]*$/" required>
+            <p ng-show="editProfileForm.lastName.$error.minlength" class="help-block">Last name is too short.</p>
+            <p ng-show="editProfileForm.lastName.$error.maxlength" class="help-block">Last name is too long.</p>
+            <p ng-show="editProfileForm.lastName.$error.pattern" class="help-block">Last name must have only letters.</p>
+          </div>
+
+          <div class="form-group" ng-class="{ 'has-error' : editProfileForm.cityLive.$invalid && !editProfileForm.cityLive.$pristine }">
+            <label for="usr">City live:</label>
+            <input type="text" name="cityLive" class="form-control" ng-model="user.cityLive" ng-minlength="3" ng-maxlength="20" placeholder="Letters from 3 to 20 signs" ng-pattern="/^[a-zA-Z]*$/" required>
+            <p ng-show="editProfileForm.cityLive.$error.minlength" class="help-block">Your city name is too short.</p>
+            <p ng-show="editProfileForm.cityLive.$error.maxlength" class="help-block">Your city name too long.</p>
+            <p ng-show="editProfileForm.cityLive.$error.pattern" class="help-block">Your city name must have only letters.</p>
+          </div>
+
+          <div class="form-group" ng-class="{ 'has-error' : editProfileForm.address.$invalid && !editProfileForm.address.$pristine }">
+            <label for="usr">Your address:</label>
+            <input type="text" name="address" class="form-control" ng-model="user.address" ng-minlength="7" ng-maxlength="20" placeholder="Letters and numbers, from 7 to 20 signs" ng-pattern="/^[a-zA-Z0-9]*$/" required>
+            <p ng-show="editProfileForm.address.$error.minlength" class="help-block">Your address name is too short.</p>
+            <p ng-show="editProfileForm.address.$error.maxlength" class="help-block">Your address name too long.</p>
+            <p ng-show="editProfileForm.address.$error.pattern" class="help-block">Your address name must have only letters and numbers.</p>
+          </div>
+          {{massage}}
+          <button type="button" class="btn btn-primary pull-right" ng-click="editProfileDet()" ng-disabled="editProfileForm.$invalid">Next</button>
+        </form>
+    </div>
+  </div>
+  <div class="profileButtonsGrid">
+
+    <a href="#editProfile">
+      <div class="profileButton">
+        Edit profile
+      </div>
+    </a>
+
+    <a href="#editPassword">
+      <div class="profileButton">
+        Edit password
+      </div>
+    </a>
+
+    <a href="#orderHistory">
+      <div class="profileButton">
+        Order History
+      </div>
+    </a>
+
+    <a href="#deleteAcc">
+      <div class="profileButton">
+        Delete account
+      </div>
+    </a>
+
+
+  </div>
+</div>

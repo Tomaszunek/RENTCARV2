@@ -1,0 +1,265 @@
+body{
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+   text-decoration:none;
+   color:white;
+
+}
+
+a:hover {
+  color:white;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 5% 10% 60% 20% 5%;
+  background-color: black;
+  color: white;
+  font-size: 250%;
+}
+.logo{
+  grid-column-start: 2;
+}
+
+.links{
+  grid-column-start: 4;
+  text-align: right;
+}
+
+.foot{
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  background-color: black;
+  color: white;
+  font-size: 150%;
+}
+.containerGrid{
+  border: 1px solid gray;
+  margin: 20px;
+}
+
+.mainGrid{
+  display: grid;
+  grid-template-columns: 2% 1fr 1fr 1fr 2%;
+  grid-template-rows: 1fr 0.1fr;
+  grid-gap: 30px;
+}
+
+.loginForm{
+  display: block;
+  margin: auto;
+  width: 40%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.regForm{
+  display: block;
+  margin: auto;
+  width: 25%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.profileGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profileChangesGrid{
+  grid-column-start: 1;
+  border-right: 1px solid gray;
+}
+
+.userInformationProfile{
+  display: block;
+  margin: auto;
+  width: 60%;
+  margin-top: 10%;
+  font-size: 120%;
+}
+
+.profileButtonsGrid{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: auto;
+  display: block;
+  margin: auto;
+}
+
+.profileButton{
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid gray;
+  text-align: center;
+  background-color: #f3f3f3;
+  font-size: 150%;
+  color: black;
+}
+
+.profileButton:hover{
+  background-color: #f0f0f0;
+}
+
+.mainSliderW
+{
+  background-color: #f0f0f0;
+  margin: 100px;
+}
+
+.mainSlides
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  display: none;
+}
+
+.mainSlidesPanels
+{
+
+  padding: 10px;
+  font-size: 150%;
+}
+
+.carWContainer
+{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 10px;
+}
+
+.finderContainer
+{
+  grid-column-start: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.carFinderPanel
+{
+  border: 1px solid gray;
+  padding: 20px;
+  min-height: 100px;
+  font-size: 150%;
+}
+
+
+.carContainer
+{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.carBlock
+{
+  border: 1px solid gray;
+  color: #2d2d2d;
+  padding: 10px;
+}
+
+.carBlock:hover
+{
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.carDetail
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px;
+}
+
+.carDetailPanels
+{
+  background: #f0f0f0;
+  border: 2px solid gray;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.carDetailPanels h2
+{
+  text-decoration: underline;
+}
+
+.carDetailPanels:hover
+{
+  background: #ededed;
+}
+
+.carDetailinfo
+{
+  background: #f0f0f0;
+  border: 2px solid gray;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.carDetailinfo:hover
+{
+  background: #ededed;
+}
+
+.carRentForm
+{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: #f0f0f0;
+  border: 2px solid gray;
+  padding: 20px;
+}
+
+.carRentFormGrid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.carRentForm:hover
+{
+  background: #ececec;
+}
+
+.carRentFormPanel
+{
+  border-right: 1px solid gray;
+  text-align: center;
+}
+
+.carRentFormPanel span
+{
+  font-size: 150%;
+}
+
+.carHistoryGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid gray;
+  background-color: #f0f0f0;
+}
+.carHistoryGrid:hover{
+  background-color: #ececec;
+}
+
+.carHistoryPanel{
+  padding-left: 5px;
+}
+
+
+.carHistoryPanel:hover{
+  background-color: #f2f2f2;
+}
+
+.carHistoryPanel:hover h4{
+  text-decoration: underline;
+}

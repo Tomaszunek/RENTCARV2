@@ -1,0 +1,37 @@
+<div class="regForm">
+  <form class="simple-form" name="regForm">
+      <div class="form-group" ng-class="{ 'has-error' : regForm.username.$invalid && !regForm.username.$pristine }">
+        <label for="usr">Username:</label>
+        <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="7" ng-maxlength="18" placeholder="Letters and numbers from 7 to 18 signs" ng-pattern="/^[a-zA-Z0-9]*$/" required>
+        <p ng-show="regForm.username.$error.minlength" class="help-block">Username is too short.</p>
+          <p ng-show="regForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+          <p ng-show="regForm.username.$error.pattern" class="help-block">Username must have only letters and numbers.</p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : regForm.password.$invalid && !regForm.password.$pristine }">
+        <label for="user">Password:</label>
+        <input type="password" name="password" class="form-control" ng-model="user.password"  ng-minlength="7" ng-maxlength="15" placeholder="Letters and numbers from 7 to 15 signs" ng-pattern="/^[a-zA-Z0-9]*$/" required/>
+        <p ng-show="regForm.password.$error.minlength" class="help-block">Password is too short.</p>
+        <p ng-show="regForm.password.$error.maxlength" class="help-block">Password is too long.</p>
+        <p ng-show="regForm.password.$error.pattern" class="help-block">Password must have only letters and numbers.</p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : regForm.email.$invalid && !regForm.email.$pristine }">
+        <label for="user">User e-mail:</label>
+        <input type="email" name="email" class="form-control" ng-model="user.email"  ng-minlength="5" ng-maxlength="35" placeholder="Email format text" required/>
+        <p ng-show="regForm.password.$error.minlength" class="help-block">Email is too short.</p>
+        <p ng-show="regForm.password.$error.maxlength" class="help-block">Email is too long.</p>
+        <p ng-show="regForm.password.$error.pattern" class="help-block">Email is invalid.</p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : regForm.phoneNumber.$invalid && !regForm.phoneNumber.$pristine }">
+        <label for="user">Phone number:</label>
+        <input type="number" name="phoneNumber" class="form-control" ng-model="user.phoneNumber"  ng-minlength="6" ng-maxlength="15" placeholder="Only numbers" ng-pattern="/[0-9]/" required/>
+        <p ng-show="regForm.phoneNumber.$error.minlength" class="help-block">Phone number is too short.</p>
+        <p ng-show="regForm.phoneNumber.$error.maxlength" class="help-block">Phone number is too long.</p>
+        <p ng-show="regForm.phoneNumber.$error.pattern" class="help-block">Phone number must have only numbers.</p>
+      </div>
+
+      <button type="button" class="btn btn-primary pull-right" ng-click="register()" ng-disabled="regForm.$invalid">Register</button>
+    </form>
+</div>

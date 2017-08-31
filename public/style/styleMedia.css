@@ -1,0 +1,741 @@
+@media screen and  (max-width: 599px) {
+  .nav{
+    grid-template-columns: 3% 20% 24% 50% 3%;
+    font-size: 125%;
+  }
+
+  .containerGrid{
+    border: 1px solid gray;
+    margin: 2px;
+  }
+
+  .foot{
+    font-size: 85%;
+  }
+
+  .loginForm{
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 35%;
+    font-size: 100%;
+  }
+  h1{
+    font-size: 150%;
+  }
+
+  .regForm{
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    font-size: 100%;
+  }
+  .profileGrid{
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .userInformationProfile{
+    display: block;
+    margin: auto;
+    width: 85%;
+    margin-top: 10%;
+    font-size: 90%;
+  }
+
+  .profileButton{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #f3f3f3;
+    font-size: 120%;
+    color: black;
+    }
+
+    .mainSliderW
+    {
+      margin: 10px;
+    }
+
+    .mainSlides
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 10px;
+    }
+
+    .mainSlidesPanels
+    {
+
+      padding: 10px;
+      font-size: 60%;
+    }
+
+
+
+    .carWContainer
+    {
+
+      grid-template-rows: 0.1fr 2fr;
+      grid-template-columns: 1fr;
+      margin: 10px;
+    }
+
+    .finderContainer
+    {
+      grid-row-start: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .carFinderPanel
+    {
+      min-height: 20px;
+      font-size: 80%;
+    }
+
+
+    .carContainer
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      padding: 10px;
+    }
+
+    .carBlock
+    {
+      padding: 5px;
+      font-size: 80%;
+    }
+
+
+
+
+    .carDetail
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.5fr;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+
+    .carDetailPanels
+    {
+      padding: 5px;
+      font-size: 80%;
+    }
+
+    .carDetailPanelsPro1
+    {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+    .carDetailPanelsPro2
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+    .carDetailPanelsPro3
+    {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    .carDetailPanels h2
+    {
+      font-size: 100%;
+    }
+
+    .carDetailinfo
+    {
+      padding: 5px;
+      font-size: 100%;
+    }
+
+    .carRentForm
+    {
+      padding: 5px;
+      grid-column-start: 1;
+      grid-row-start: 3;
+      font-size: 80%;
+    }
+
+    .carRentForm h3{
+      font-size: 150%
+    }
+
+    .carRentFormGrid
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .carHistoryGrid
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 120px 110px;
+      margin: 5px 10px 5px 10px;
+    }
+
+    .carHistoryPanel{
+      font-size: 50%;
+    }
+
+    .carHistoryPanel h4
+    {
+      font-size: 100%;
+    }
+
+
+    .carHistoryPanel{
+      padding-left: 5px;
+      font-size: 70%;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+  .nav{
+    grid-template-columns: 4% 20% 22% 50% 4%;
+    font-size: 175%;
+  }
+
+  .containerGrid{
+    border: 1px solid gray;
+    margin: 5px;
+  }
+
+  .foot{
+    font-size: 105%;
+  }
+
+  .loginForm{
+    width: 65%;
+    margin-top: 20%;
+    margin-bottom: 35%;
+    font-size: 100%;
+  }
+  h1{
+    font-size: 175%;
+  }
+
+  .regForm{
+    width: 65%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    font-size: 100%;
+  }
+  .profileGrid{
+    grid-template-columns: 5fr 2fr;
+  }
+
+  .userInformationProfile{
+    display: block;
+    margin: auto;
+    width: 85%;
+    margin-top: 5%;
+    font-size: 110%;
+  }
+
+  .profileButton{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #f3f3f3;
+    font-size: 120%;
+    color: black;
+    }
+
+    .mainSliderW
+    {
+      margin: 20px;
+    }
+
+    .mainSlides
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 15px;
+    }
+
+    .mainSlidesPanels
+    {
+
+      padding: 15px;
+      font-size: 100%;
+    }
+
+    .carWContainer
+    {
+
+      grid-template-rows: 0.1fr 1fr;
+      grid-template-columns: 1fr;
+      margin: 10px;
+    }
+
+    .finderContainer
+    {
+      grid-row-start: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .carFinderPanel
+    {
+      min-height: 50px;
+      font-size: 120%;
+    }
+
+
+    .carContainer
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      padding: 10px;
+    }
+
+    .carBlock
+    {
+      padding: 5px;
+      font-size: 100%;
+    }
+
+    .carDetail
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.5fr;
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .carDetailPanels
+    {
+      padding: 5px;
+      font-size: 100%;
+    }
+
+    .carDetailPanelsPro1
+    {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+    .carDetailPanelsPro2
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+    .carDetailPanelsPro3
+    {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    .carDetailPanels h2
+    {
+      font-size: 100%;
+    }
+
+    .carDetailinfo
+    {
+      padding: 5px;
+      font-size: 100%;
+    }
+
+    .carRentForm
+    {
+      padding: 5px;
+      grid-column-start: 1;
+      grid-row-start: 3;
+      font-size: 100%;
+    }
+
+    .carRentForm h3{
+      font-size: 180%
+    }
+
+    .carRentFormGrid
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .carRentFormPanel span
+    {
+      font-size: 150%;
+    }
+
+    .carHistoryGrid
+    {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 0.6fr;
+      margin: 5px 10px 5px 10px;
+    }
+
+    .carHistoryPanel{
+      font-size: 100%;
+    }
+
+    .carHistoryPanel h4
+    {
+      font-size: 200%;
+    }
+
+
+    .carHistoryPanel{
+      padding-left: 5px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+  .nav{
+    grid-template-columns: 5% 20% 20% 50% 5%;
+    font-size: 200%;
+  }
+
+  .containerGrid{
+    border: 1px solid gray;
+    margin: 5px;
+  }
+
+  .foot{
+    font-size: 105%;
+  }
+
+  .loginForm{
+    width: 35%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 100%;
+  }
+  h1{
+    font-size: 200%;
+  }
+
+  .regForm{
+    width: 45%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 100%;
+  }
+
+  .profileGrid{
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .userInformationProfile{
+    display: block;
+    margin: auto;
+    width: 85%;
+    margin-top: 5%;
+    font-size: 110%;
+  }
+
+  .profileButton{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #f3f3f3;
+    font-size: 120%;
+    color: black;
+    }
+
+    .mainSliderW
+    {
+      margin: 20px;
+    }
+
+    .mainSlides
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 15px;
+    }
+
+    .mainSlidesPanels
+    {
+
+      padding: 15px;
+      font-size: 120%;
+    }
+
+    .carWContainer
+    {
+
+      grid-template-rows: 0.1fr 1fr;
+      grid-template-columns: 1fr;
+      margin: 10px;
+    }
+
+    .finderContainer
+    {
+      grid-row-start: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .carFinderPanel
+    {
+      min-height: 50px;
+      font-size: 120%;
+    }
+
+
+    .carContainer
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 10px;
+    }
+
+    .carBlock
+    {
+      padding: 5px;
+      font-size: 80%;
+    }
+
+
+
+    .carDetail
+    {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr;
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .carDetailPanels
+    {
+      padding: 5px;
+      font-size: 125%;
+    }
+
+    .carDetailPanelsPro1
+    {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+    .carDetailPanelsPro2
+    {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+    .carDetailPanelsPro3
+    {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    .carDetailPanels h2
+    {
+      font-size: 100%;
+    }
+
+    .carDetailinfo
+    {
+      padding: 5px;
+      font-size: 100%;
+    }
+
+    .carRentForm
+    {
+      padding: 5px;
+      grid-column-start: 2;
+      grid-row-start: 2;
+      font-size: 100%;
+    }
+
+    .carRentForm  h2 {
+      font-size: 150%
+    }
+    .carRentForm  h3 {
+      font-size: 150%
+    }
+
+    .carRentFormGrid
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .carRentFormPanel span
+    {
+      font-size: 120%;
+    }
+
+    .carHistoryGrid
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin: 5px 10px 5px 10px;
+    }
+
+    .carHistoryPanel{
+      font-size: 100%;
+    }
+
+    .carHistoryPanel h4
+    {
+      font-size: 180%;
+    }
+
+
+    .carHistoryPanel{
+      padding-left: 5px;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+  .nav{
+    grid-template-columns: 5% 20% 20% 50% 5%;
+    font-size: 225%;
+  }
+
+  .containerGrid{
+    border: 1px solid gray;
+    margin: 10px;
+  }
+
+  .foot{
+    font-size: 105%;
+  }
+
+  .loginForm{
+    width: 25%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-size: 100%;
+  }
+  h1{
+    font-size: 250%;
+  }
+
+  .regForm{
+    width: 35%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+    font-size: 100%;
+  }
+
+  .profileGrid{
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .userInformationProfile{
+    display: block;
+    margin: auto;
+    width: 85%;
+    margin-top: 5%;
+    font-size: 110%;
+  }
+
+  .profileButton{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #f3f3f3;
+    font-size: 120%;
+    color: black;
+    }
+
+    .mainSliderW
+    {
+      background-color: #f0f0f0;
+      margin: 25px;
+    }
+
+    .mainSlides
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 20px;
+    }
+
+    .mainSlidesPanels
+    {
+      padding: 20px;
+      font-size: 150%;
+    }
+
+    .carWContainer
+    {
+
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 4fr;
+      margin: 10px;
+    }
+
+    .finderContainer
+    {
+      grid-column-start: 1;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .carFinderPanel
+    {
+      grid-column-start: 1;
+      min-height: 50px;
+      font-size: 120%;
+    }
+
+
+    .carContainer
+    {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 10px;
+    }
+
+    .carBlock
+    {
+      padding: 5px;
+      font-size: 120%;
+    }
+
+    .carDetail
+    {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .carDetailPanels
+    {
+      padding: 20px;
+      font-size: 170%;
+    }
+
+    .carDetailPanels h2
+    {
+      font-size: 150%;
+    }
+
+    .carDetailinfo
+    {
+      padding: 20px;
+      font-size: 150%;
+    }
+
+    .carRentForm
+    {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      padding: 20px;
+    }
+
+    .carRentFormPanel
+    {
+      font-size: 130%;
+    }
+}

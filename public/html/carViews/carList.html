@@ -1,0 +1,66 @@
+<div class="carWContainer">
+  <div class="finderContainer">
+    <div class="carFinderPanel">
+      <span>Car brand:</span> <br>
+      <select name="carBrand" id="carBrand"
+      ng-options="brand.carBrand for brand in brands track by brand.id"
+      ng-model="finder.carBrand"
+      ng-change="changeFinder()"></select>
+    </div>
+
+    <div class="carFinderPanel">
+      <span>Price category:</span><br>
+      <select name="priceCategory" id="priceCategory"
+      ng-options="priceCat.priceCategoryName for priceCat in priceCategories track by priceCat.id"
+      ng-model="finder.priceCategoryName"
+      ng-change="changeFinder()"></select>
+    </div>
+
+    <div class="carFinderPanel">
+      <span>Car type:</span><br>
+      <select name="carType" id="carType"
+      ng-options="carType.typeName for carType in carTypes track by carType.id"
+      ng-model="finder.carType"
+      ng-change="changeFinder()"></select>
+    </div>
+
+    <div class="carFinderPanel">
+      <span>Count person:</span>
+      <form>
+        <label><input type="radio" ng-model="finder.countPerson" value="0" checked ng-change="changeFinder()"> All cars</label>
+        <label><input type="radio" ng-model="finder.countPerson"  value="2" ng-change="changeFinder()"> 2</label>
+        <label><input type="radio" ng-model="finder.countPerson"  value="4" ng-change="changeFinder()"> 4</label>
+        <label><input type="radio" ng-model="finder.countPerson"  value="5" ng-change="changeFinder()"> 5</label>
+        <label><input type="radio" ng-model="finder.countPerson"  value="8" ng-change="changeFinder()"> 8</label>
+      </form>
+    </div>
+  </div>
+
+  <div class="carContainer">
+    <div ng-repeat="car in cars">
+      <a href="#carDetail/{{car.id}}">
+        <div class="carBlock">
+          <img src="./img/{{car.idPhoto}}.jpg" style="width:100%;" alt="">
+          <table style="width:100%">
+            <tr>
+              <th>Brand: {{car.CarBrand.carBrand}}</th>
+              <th>Name: {{car.CarName.carName}}</th>
+            </tr>
+            <tr>
+              <td>Type: {{car.CarType.typeName}}</td>
+              <td>C. person: {{car.countPerson}}</td>
+            </tr>
+            <tr>
+              <td>Price: {{car.CarPriceCategory.priceCategoryName}}</td>
+              <td>Price per day: {{car.CarPriceCategory.pricePerDay}}</td>
+            </tr>
+            <tr>
+              <td>R. size: {{car.RegionSize.regionSizeName}}</td>
+              <td>R. name: {{car.RegionName.regionName}}</td>
+            </tr>
+          </table>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

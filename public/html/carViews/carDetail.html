@@ -1,0 +1,125 @@
+<div class="carDetail">
+
+  <img src="./img/{{car.idPhoto}}.jpg" style="width:100%;" alt="">
+  <div class="carDetailPanels carDetailPanelsPro1">
+    <h2>CAR DETAILS</h2>
+    <table style="width:80%">
+      <tr>
+        <th>Brand:</th>
+        <td>{{car.CarBrand.carBrand}}</td>
+      </tr>
+      <tr>
+        <th>Name:</th>
+        <td>{{car.CarName.carName}}</td>
+      </tr>
+      <tr>
+        <th>Type:</th>
+        <td>{{car.CarType.typeName}}</td>
+      </tr>
+      <tr>
+        <th>Count person:</th>
+        <td>{{car.countPerson}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="carDetailPanels carDetailPanelsPro2">
+    <h2>OTHER INFORMATIONS</h2>
+    <table style="width:80%">
+      <tr>
+        <th>Milage:</th>
+        <td>{{car.mileage}} KM</td>
+      </tr>
+      <tr>
+        <th>Engine type:</th>
+        <td>{{car.fuelOrGas}}</td>
+      </tr>
+      <tr>
+        <th>Horse power:</th>
+        <td>{{car.horsePower}} HP</td>
+      </tr>
+
+    </table>
+  </div>
+  <div class="carDetailPanels carDetailPanelsPro3">
+    <h2>PRICE AND REGION DETAILS</h2>
+    <table style="width:80%">
+      <tr>
+        <th>Price category:</th>
+        <td>{{car.CarPriceCategory.priceCategoryName}}</td>
+      </tr>
+      <tr>
+        <th>Price per day:</th>
+        <td>{{car.CarPriceCategory.pricePerDay}} PLN</td>
+      </tr>
+      <tr>
+        <th>Last region size:</th>
+        <td>{{car.RegionSize.regionSizeName}}</td>
+      </tr>
+      <tr>
+        <th>Last region name:</th>
+        <td>{{car.RegionName.regionName}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="carDetailinfo" ng-hide="authenticated">
+    <h2>Please login if you want rent car.</h2>
+  </div>
+  <div class="carDetailinfo" ng-hide="authenticated">
+    <h2>When you login here will show rent form.</h2>
+  </div>
+
+  <div class="carRentForm" ng-show="authenticated">
+    <h2>RENT CAR FORM</h2>
+    <form class="carRentFormGrid">
+
+      <div class="carRentFormPanel">
+        <h3>Insurance type:</h3>
+        <select name="insurment" id="insurment"
+        ng-options="insurment.insuranceName for insurment in insurments track by insurment.id"
+        ng-model="rent.insurment"
+        ng-change="insurmentChange()"
+        value="{{insurment.id}}"></select>
+        <br>
+        <span>{{price.insurancePrice}} PLN</span>
+      </div>
+
+      <div class="carRentFormPanel">
+        <h3>Region choose:</h3>
+        Region size:
+        <select name="regionSize" id="regionSize"
+        ng-options="regionSize.regionSizeName for regionSize in regionSizes track by regionSize.id"
+        ng-model="rent.regionSize"
+        ng-change="regionChange()"
+        value="{{regionSize.id}}"></select>
+        <br><br>
+
+        Region name:
+        <select name="regionName" id="regionName"
+        ng-options="regionName.regionName for regionName in regionNames track by regionName.id"
+        ng-model="rent.regionName"></select>
+        <br>
+        <span>{{price.regionPrice}} PLN P/D</span>
+      </div>
+
+      <div class="carRentFormPanel">
+        <h3>Time service choose:</h3>
+        Start:  <input type="date" id="startServ" ng-model="rent.startServ" ng-change="dateChange()" placeholder="yyyy-MM-dd" required /><br><br>
+        End:  <input type="date" id="endServ"  ng-model="rent.endServ" ng-change="dateChange()" placeholder="yyyy-MM-dd" required />
+        <br>
+        <span>{{price.dateCommant}}</span>
+
+      </div>
+      <div class="carRentFormPanel">
+        <h3>Summary:</h3>
+        <span>{{price.finalPrice}} PLN </span>
+        <br>
+        <input type="hidden" ng-model="hidden.carPrice" value="">
+        <input type="hidden" ng-model="hidden.insurment"  value="">
+        <input type="hidden" ng-model="hidden.regionPrice"  value="">
+        <input type="hidden" ng-model="hidden.countDay"  value="">
+        <button type="button" name="button" ng-show="formValid" ng-click="rentCar()">RENT CAR</button>
+      </div>
+    </form>
+  </div>
+</div>
